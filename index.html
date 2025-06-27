@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flores Qurban</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<style>
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #2E7D32 0%, #4CAF50 100%);
+}
+
+.login-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-card .logo {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.login-card h2 {
+  margin-bottom: 25px;
+  color: #2E7D32;
+}
+
+.login-card form {
+  text-align: left;
+}
+
+.login-card label {
+  display: block;
+  font-weight: 600;
+  margin-top: 15px;
+  color: #333;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #f0f8ff;
+  font-size: 16px;
+}
+
+.login-card button {
+  width: 100%;
+  margin-top: 20px;
+  background: linear-gradient(45deg, #2E7D32, #4CAF50);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-card button:hover {
+  background: #388e3c;
+}
+
+.bottom-text {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+.bottom-text a {
+  color: #2E7D32;
+  text-decoration: none;
+  font-weight: bold;
+}
+</style>
+
+<body>
+    <section class="login-section">
+  <div class="login-card">
+    <div class="logo">🐄</div>
+    <h2>Login Flores Qurban</h2>
+    <form id="formLogin">
+      <label for="email">Email:</label>
+      <input type="email" id="email" required placeholder="Masukkan email">
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" required placeholder="Masukkan password">
+      
+      <button type="submit">Masuk</button>
+    </form>
+    <p class="bottom-text">Belum punya akun? <a href="#">Daftar di sini</a></p>
+  </div>
+</section>
+
+
+<header>
+  <h1>Flores Qurban</h1>
+</header>
+<div id="mainContent" style="display: none;">
+  <!-- header, nav, section daftar-hewan, dll -->
+</div>
+
+
+<nav>
+  <a href="#beranda">Beranda</a>
+  <a href="#daftar-hewan">Daftar Hewan</a>
+  <a href="#kontak">Kontak</a>
+</nav>
+
+<section id="beranda">
+  <h2>Temukan Hewan Qurban Terbaik untuk Anda!</h2>
+  <p>Pilih hewan qurban yang sesuai dengan kebutuhan Anda di sini.</p>
+  <a href="#daftar-hewan"><button>Lihat Hewan Qurban</button></a>
+</section>
+
+<section id="daftar-hewan">
+  <h2>Daftar Hewan Qurban</h2>
+
+  <div class="hewan" data-nama="Sapi Bali" data-harga="30000000">
+    <img src="sapi_bali.jpg" alt="Sapi Bali" />
+    <h3>Sapi Bali</h3>
+    <p>Harga: RP 30.000.000</p>
+    <button onclick="pilihHewan(this)">Pesan Sekarang</button>
+  </div>
+
+   <div class="hewan" data-nama="Sapi limosin" data-harga="40000000">
+    <img src="sapi_limosin.jpg" alt="Sapi limosin" />
+    <h3>Sapi limosin</h3>
+    <p>Harga: RP 40.000.000</p>
+    <button onclick="pilihHewan(this)">Pesan Sekarang</button>
+  </div>
+
+   <div class="hewan" data-nama="Sapi madura" data-harga="35000000">
+    <img src="sapi_madura.jpg" alt="Sapi madura" />
+    <h3>Sapi madura</h3>
+    <p>Harga: RP 35.000.000</p>
+    <button onclick="pilihHewan(this)">Pesan Sekarang</button>
+  </div>
+
+ <div class="hewan" data-nama="Sapi dinar" data-harga="50000000">
+    <img src="sapi_dinar.jpg" alt="Sapi dinar" />
+    <h3>Sapi dinar</h3>
+    <p>Harga: RP 50.000.000</p>
+    <button onclick="pilihHewan(this)">Pesan Sekarang</button>
+  </div>
+
+  <div class="hewan" data-nama="Sapi brahman" data-harga="70000000">
+    <img src="sapi_brahman.jpg" alt="Sapi brahman" />
+    <h3>Sapi brahman</h3>
+    <p>Harga: RP 70.000.000</p>
+    <button onclick="pilihHewan(this)">Pesan Sekarang</button>
+  </div>
+
+  <div class="hewan" data-nama="Sapi Kupang" data-harga="25000000">
+    <img src="sapi_kupang.jpg" alt="Sapi Kupang" />
+    <h3>Sapi Kupang</h3>
+    <p>Harga: RP 25.000.000</p>
+    <button onclick="pilihHewan(this)">Pesan Sekarang</button>
+  </div>
+
+  <div class="hewan">
+    <img src="kambing_etawa.jpg" alt="Kambing Etawa">
+    <h3>Kambing Etawa</h3>
+    <p>harga: RP 5.000.000</p>
+    <button onclick="pilihHewan(this)">Pesan Sekarang</button>
+  </div>
+
+  <div class="hewan">
+    <img src="kambing_boerka.jpg" alt="Kambing boerka">
+    <h3>Kambing boerka</h3>
+    <p>harga: RP 4.500.000</p>
+    <button onclick="pilihHewan(this)">Pesan Sekarang</button>
+  </div>
+
+  <div class="hewan">
+    <img src="kambing_jawarandu.jpg" alt="Kambing jawarandu">
+    <h3>Kambing jawarandu</h3>
+    <p>harga:RP 6.000.000</p>
+    <button onclick="pilihHewan(this)">Pesan Sekarang</button>
+  </div>
+
+  <div class="hewan">
+    <img src="kambing_pe.jpg" alt="Kambing pe">
+    <h3>Kambing pe</h3>
+    <p>harga: RP 7.500.000</p>
+    <button onclick="pilihHewan(this)">Pesan Sekarang</button>
+  </div>
+</section>
+  <!-- Tambahkan hewan lainnya dengan pola yang sama -->
+</section>
+
+<section id="form-pemesanan">
+  <h2>Form Pemesanan</h2>
+  <form id="form-pesanan" method="POST" action="http://localhost:5000/simpan-pesanan">
+    <input type="hidden" id="nama-hewan" name="nama_hewan" />
+    <input type="hidden" id="harga-hewan" name="harga_hewan" />
+
+    <label>Nama Anda:</label><br />
+    <input type="text" name="nama" placeholder="Nama Anda" required /><br />
+
+    <label>No HP / Email:</label><br />
+    <input type="text" name="kontak" placeholder="No HP / Email" required /><br />
+
+    <label>Pesan Tambahan:</label><br />
+    <textarea name="pesan" placeholder="Pesan..."></textarea><br />
+
+    <button type="submit">Kirim Pesanan</button>
+  </form>
+</section>
+
+
+
+<a href="https://wa.me/6289512194008?text=Halo%20Flores%20Qurban,%20saya%20ingin%20pesan%20hewan%20qurban." class="wa-button" target="_blank">
+  Chat via WhatsApp
+</a>
+
