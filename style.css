@@ -1,0 +1,161 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+header {
+  
+  color: rgb(30, 16, 16);
+  padding: px;
+  text-align: center;
+}
+
+nav {
+  background-color: #172d18;
+  text-align: center;
+  padding: px;
+}
+
+nav a {
+  color: rgb(255, 252, 252);
+  margin:  15px;
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+  background-color: rgba(129, 129, 129, 0.9);
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.hewan {
+  display: inline-block;
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+}
+
+.hewan img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+button {
+  background-color: #2e7d32;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.wa-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 999;
+}
+.wa-button:hover {
+  background-color: #128C7E;
+}
+
+@media screen and (max-width: 200px) {
+  .hewan {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  section {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .wa-button {
+    padding: 0px 10px;
+    font-size: 14px;
+  }
+}
+
+/* Atur grid untuk daftar hewan */
+#daftar-hewan {
+  display: flex;
+  flex-wrap: wrap;
+ 
+  gap: 30px;
+  padding: 20px;
+}
+
+/* Atur tampilan setiap kartu hewan */
+.hewan {
+  width: 150px;
+  border: 0px solid #fffefe;
+  border-radius: 1px;
+  padding: 1px;
+  text-align: center;
+  box-sizing:border-box;
+  background-color: #fefefe;
+  box-shadow: 2px 2px 8px rgba(1, 1,0.1);
+  transition: transform 0.1s;
+}
+
+.hewan:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+/* Ukuran dan posisi gambar */
+.hewan img {
+  width: 100%;
+  height: px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+/* Tombol seragam */
+.hewan button {
+  background-color: #318934;
+  color: rgb(255, 254, 254);
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.hewan button:hover {
+  background-color: #115d16;
+}
+
+.login-container {
+    background: url('background-login.jpg') no-repeat center center/cover, white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
